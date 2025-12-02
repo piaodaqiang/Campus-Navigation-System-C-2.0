@@ -1,4 +1,5 @@
 #ifndef GRAPH_H
+#include <stdbool.h>
 
 
 #define MAXN 100
