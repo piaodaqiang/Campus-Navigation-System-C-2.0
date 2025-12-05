@@ -10,6 +10,7 @@ void show_menu() {
     printf("4. 显示所有路径（DFS 枚举）\n");
     printf("5. 保存地图到文件\n");
     printf("6. 从文件加载地图\n");
+    printf("7. 管理地点信息（增/删/改）\n");
     printf("0. 退出系统\n");
     printf("请选择：");
 }
@@ -107,6 +108,9 @@ int main() {
                     printf("成功从 campus.map 加载！\n");
                 else
                     printf("加载失败！\n");
+                break;
+            case 7:
+                manage_nodes(&g);
                 break;
             case 0:
                 printf("感谢使用，再见！\n");
